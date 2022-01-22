@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "ng": "ng",
-    "start": "npm build && serve -l 5001 dist/angular-app",
+    "start": "npm run build && serve -l 5001 dist/angular-app",
     "dev": "ng serve",
     "build": "ng build --output-hashing none --single-bundle true",
     "watch": "ng build --watch --configuration development",

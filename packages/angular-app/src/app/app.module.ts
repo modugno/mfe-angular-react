@@ -5,16 +5,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 
+const components = [
+  AppComponent,
+  HeaderComponent
+]
+
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent
+    ...components
+  ],
+  entryComponents: [
+    ...components
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule {
 
