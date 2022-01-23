@@ -21,7 +21,9 @@ const components = [
     BrowserModule
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [
+    // AppComponent
+  ]
 })
 export class AppModule {
 
